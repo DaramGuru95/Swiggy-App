@@ -1,6 +1,6 @@
-const dataOfSwiggy = [
+const dataOfSwiggyList = [
   {
-    info: {
+    data: {
       id: "18975",
       name: "Nandhana Palace",
       cloudinaryImageId: "195876a3181ef63f76e45e3a7b49b585",
@@ -91,7 +91,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "288893",
       name: "Meghana Foods",
       cloudinaryImageId: "slheenytwb3iaypqf4yd",
@@ -184,7 +184,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "3369",
       name: "Truffles",
       cloudinaryImageId: "cd832b6167eb9f88aeb1ccdebf38d942",
@@ -270,7 +270,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "491104",
       name: "Theobroma",
       cloudinaryImageId: "b033728dcb0101ceb19bff0e1e1f6474",
@@ -377,7 +377,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "41102",
       name: "Hotel Empire",
       cloudinaryImageId: "l5sjr78yn3vhopcvqgfb",
@@ -467,7 +467,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "487238",
       name: "BOX8 - Desi Meals",
       cloudinaryImageId: "69a061b7e0f951cef2b4947946f94ec6",
@@ -576,7 +576,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "232571",
       name: "The Good Bowl",
       cloudinaryImageId: "6e04be27387483a7c00444f8e8241108",
@@ -673,7 +673,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "405105",
       name: "Leon's - Burgers & Wings (Leon Grill)",
       cloudinaryImageId: "b2edbc28b7b8219d6e0a9c049ce06658",
@@ -763,7 +763,7 @@ const dataOfSwiggy = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    info: {
+    data: {
       id: "272241",
       name: "EatFit",
       cloudinaryImageId: "6126c9b45de2cb222405c1af8a321e74",
@@ -881,4 +881,4 @@ const dataOfSwiggy = [
   },
 ];
 
-export default dataOfSwiggy;
+export default dataOfSwiggyList;
