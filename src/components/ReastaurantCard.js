@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 
 const RestaurantCard = (props) => {
   let mockData = [10, 30, 14, 25, 24, 13];
+  const { resData, sla } = props;
+
+  const fetchData = () => {
+    console.log("Hey Daram");
+  };
 
   const [data, setData] = useState();
   useEffect(() => {
@@ -17,21 +22,29 @@ const RestaurantCard = (props) => {
       <img
         className="res-logo"
         alt="res-logo"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/x4uyxvihmg8qa3pddkgf"
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          resData.data.cloudinaryImageId
+        }
       />
-      <h3>{props.resName}</h3>
-      <h4>{props.cuisines}</h4>
-      <h4>4.4 stars</h4>
-      <h4>38 minutes</h4>
-      <button
-        onClick={() => {
-          const filterData = mockData.filter((res) => {
-            res > 10;
-          });
-        }}
-      >
-        Click me
-      </button>
+      <div className="restarant-text">
+        <h3>{resData.data.name}</h3>
+        <h4>
+          {resData.data.avgRating}.{resData.data.sla.deliveryTime} minutes
+        </h4>
+        <h4>{resData.data.costForTwo}</h4>
+        <h4>{resData.data.cuisines.join(", ")}</h4>
+        <h4>{resData.data.locality}</h4>
+        {/* <button
+          onClick={() => {
+            const filterData = mockData.filter((res) => {
+              res > 10;
+            });
+          }}
+        >
+          Click me
+        </button> */}
+      </div>
     </div>
   );
 };

@@ -1,20 +1,24 @@
+*{
+    font-family: sans-serif;
+}
 .header{
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
+    height: 13vh;
+    width: 100%;
+    background-color: #fff;
 }
 
 .logo{
-    width: 200px;
+    width: 110px;
 }
 
-.nav-items{
-    margin-top: 10px;
-}
 .nav-items ul{
     display: flex;
-    font-size: 24px;
+    font-size: 18px;
     list-style-type: none;
+    margin-right: 50px ;
 }
 
 .nav-items ul li{
@@ -24,20 +28,30 @@
 
 .search{
     padding: 10px;
+    /* gap: 3; */
+    margin-left: 0;
+    /* cursor: pointer; */
 }
 
 
 .res-card{
+    display: flex;
+    flex-direction: column;
     background-color: #f0f0f0;
     padding: 5px;
-    height: 400px;
-    width: 200px;
+    height: 50vh;
+    width: 180px;
+    border: "1px solid black ";
+    border-radius: 10px;
+    gap: 2;
 }
 
 .res-container{
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
+    font-size: 13px;
+    gap: 5;
 }
 
 .res-card:hover{
@@ -47,5 +61,39 @@
 
 .res-logo{
     width: 100%;
-    /* height: 200px; */
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.login{
+    height: 3.5vh;
+    width: 3.5vw;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.body-input{
+    width: "30vw";
+    height: 3.8vh;
+    /* border: "1px solid #f0f0f0"; */
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    /* cursor: pointer; */
+    color: #000;
+}
+
+.body-input-search{
+    height: 4.3vh;
+    width: 8vw;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.restarant-text{
+    gap: 3;
+    font-family: sans-serif;
 }

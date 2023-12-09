@@ -5,10 +5,10 @@ import Body from "./src/components/Body";
 
 const AppLayout = () => {
   return (
-    <div>
+    <>
       <Header />
       <Body />
-    </div>
+    </>
   );
 };
 
