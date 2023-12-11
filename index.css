@@ -86,11 +86,12 @@
 }
 
 .body-input-search{
-    height: 4.3vh;
-    width: 8vw;
+    /* height: 4.3vh; */
+    width: 6vw;
     border-radius: 5px;
     background-color: #f0f0f0;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .restarant-text{

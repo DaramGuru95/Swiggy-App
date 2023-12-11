@@ -1,4 +1,4 @@
-const dataOfSwiggyList = [
+const resList = [
   {
     data: {
       id: "18975",
@@ -106,7 +106,7 @@ const dataOfSwiggyList = [
         "Chinese",
         "Seafood",
       ],
-      avgRating: 4.4,
+      avgRating: 3.4,
       feeDetails: {
         restaurantId: "288893",
         fees: [
@@ -192,7 +192,7 @@ const dataOfSwiggyList = [
       areaName: "St. Marks Road",
       costForTwo: "₹450 for two",
       cuisines: ["American", "Desserts", "Continental", "Italian"],
-      avgRating: 4.5,
+      avgRating: 3.9,
       feeDetails: {
         restaurantId: "3369",
         fees: [
@@ -881,4 +881,4 @@ const dataOfSwiggyList = [
   },
 ];
 
-export default dataOfSwiggyList;
+export default resList;

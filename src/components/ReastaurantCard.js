@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { CDN_URL } from "../Utils/constants";
 
 const RestaurantCard = (props) => {
-  let mockData = [10, 30, 14, 25, 24, 13];
   const { resData } = props;
   const { cloudinaryImageId, name, avgRating, costForTwo, cuisines, locality } =
     resData?.data;
 
-  const fetchData = () => {
-    console.log("Hey Daram");
-  };
+  // const fetchData = () => {
+  //   console.log("Hey Daram");
+  // };
 
   const [data, setData] = useState();
   useEffect(() => {
-    fetchData();
+    // fetchData();
   }, []);
 
   const url = fetch(
@@ -24,10 +24,7 @@ const RestaurantCard = (props) => {
       <img
         className="res-logo"
         alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
+        src={CDN_URL + cloudinaryImageId}
       />
       <div className="restarant-text">
         <h3>{name}</h3>
