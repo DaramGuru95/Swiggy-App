@@ -2,18 +2,86 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import About from "./src/components/About";
+import Contact from "./src/components/Contact";
+import Error from "./src/components/Error";
+import Search from "./src/components/Search";
+import OffersPage from "./src/components/OffersPage";
+import Help from "./src/components/Help";
+import Cart from "./src/components/Cart";
+import User from "./src/components/UserPage";
 
 const AppLayout = () => {
   return (
     <>
       <Header />
-      <Body />
+      <Outlet />
+      {/* {If my path = /} */}
+      {/* <Body /> */}
+
+      {/* {If my path = /about} */}
+      {/* <About /> */}
+
+      {/* {If my path = /contact} */}
+      {/* <Contact /> */}
     </>
   );
 };
 
 export default AppLayout;
 
+const appRoutes = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/body",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
+      },
+      {
+        path: "/offers",
+        element: <OffersPage />,
+      },
+      {
+        path: "/help",
+        element: <Help />,
+      },
+      {
+        path: "/user",
+        element: <User />,
+      },
+      // {
+      //   path: "/cart",
+      //   element: <Cart />,
+      // },
+    ],
+    errorElement: <Error />,
+  },
+
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRoutes} />);
