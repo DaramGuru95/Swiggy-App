@@ -2,13 +2,18 @@ import { useState } from "react";
 import RestaurantCard from "./ReastaurantCard";
 // import oneDataCard from "./Data/OneDataCard";
 import resList from "../Utils/mockdata";
+import useOnlineStatus from "../Utils/useOnlineStatus";
 
 const Body = () => {
   const [listOfRestaurants, setListData] = useState(resList);
+  const onlineStatus = useOnlineStatus();
 
   // const url =
   //   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.919579172818151&lng=77.61575337717859&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
+  if (onlineStatus === false) {
+    return <h1>Check Your Iternet Connection! you're offline</h1>;
+  }
   return (
     <div className="body">
       <div className="filter">

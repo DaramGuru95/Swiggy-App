@@ -263,3 +263,14 @@ Note: All the Childrens according to the routes go inside.
 
 Link: Link is a Component which is provided by the React Router DOM library. The Link component will work same as like anchor tag, the main difference is, if we are using anchor tag, the particular path entire page will render,
 If we are using Link component which is provided by the react router DOM, it won’t render the entire page it will render only the particular component, which is provided in the path.
+
+#####
+
+Optimizing Our App: By Using These Process to Optimize our App.
+
+1. Chunking
+2. Code Splitting
+3. Dynamic Bundling
+4. Lazy Loading
+5. On Demand Loading
+6. Dynamic Import
